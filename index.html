@@ -25,15 +25,15 @@
     <script>
         var vlSpec = {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "data": {"url": "https://vega.github.io/editor/data/movies.json"},
+            "data": {"url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/fall2023-acg-acu/main/data/building_inventory.csv"},
             "mark": "point",
             "encoding": {
                 "x" : {
-                    "field": "US Gross",
-                    "type": "quantitative"
+                    "field": "Agency Name",
+                    "type": "qualitative"
                 },
                 "y" : {
-                    "field": "Worldwide Gross",
+                    "field": "Bldg Status",
                     "type": "quantitative"
                 }
             }
